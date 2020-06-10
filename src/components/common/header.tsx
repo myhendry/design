@@ -1,11 +1,20 @@
 import React from "react"
 
-interface Props {
-  siteTitle: string
+import { Navbar } from "./navbar"
+import styled from "styled-components"
+
+interface HeaderProps {
+  siteTitle?: string
 }
 
-export const Header: React.FC<Props> = ({ siteTitle = "" }) => (
-  <div>
-    <h1>{siteTitle}</h1>
-  </div>
+export const Header: React.FC<HeaderProps> = () => (
+  <Head>
+    <Navbar />
+    {/* <h1>{siteTitle}</h1> */}
+  </Head>
 )
+
+const Head = styled.div`
+  display: flex;
+  padding: 0.5rem;
+`

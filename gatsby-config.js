@@ -2,8 +2,8 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Starter`,
-    description: `Gatsby + Typescript + Semantic-UI-React + Apollo Graphql Starter`,
+    title: `H`,
+    description: `Imagine`,
     author: `@hl`,
   },
   plugins: [
@@ -13,6 +13,8 @@ module.exports = {
     `gatsby-plugin-anchor-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
