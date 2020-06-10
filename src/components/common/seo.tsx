@@ -9,19 +9,20 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
 
-interface Props {
+interface SEOProps {
   description?: string
   lang?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   meta?: any[]
   title: string
 }
 
-export const SEO: React.FC<Props> = ({
+export const SEO: React.FC<SEOProps> = ({
   description = "",
   lang = "en",
   meta = [],
   title,
-}) => {
+}: SEOProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {

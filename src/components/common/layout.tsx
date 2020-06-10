@@ -12,6 +12,7 @@ interface LayoutProps {
   children: ReactNode
 }
 
+//* add google styling using createGlobalStyle + adding Google fonts
 const GlobalStyle = createGlobalStyle`
   :root {
     --dark: #333;
@@ -29,11 +30,9 @@ html {
   font-size: 62.5%;
 }
 body {
-  /* background-color:${p => p.theme.secondary} ;
-  color: ${p => p.theme.primaryTextColor}; */
   background-color: #fff ;
   color: #333;
-  font-family: Roboto, Lato;
+  font-family: 'Metal Mania', 'Roboto Slab', 'Lato';
   box-sizing: border-box;
   line-height: 1.7;
   /* padding: 2rem; */

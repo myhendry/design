@@ -14,7 +14,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: "Roboto Slab",
+            variable: true,
+            weights: ["200..900"],
+          },
+          {
+            family: "Metal Mania",
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
